@@ -4,5 +4,5 @@ AS count_no_trans
 FROM Visits v
 LEFT JOIN Transactions t
 ON v.visit_id = t.visit_id
-WHERE t.transaction_id is Null
+WHERE t.transaction_id is Null 
 GROUP BY v.customer_id
